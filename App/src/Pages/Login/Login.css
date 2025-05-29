@@ -1,0 +1,98 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+
+  background-image: url('https://resources.easystore.co/website/blog/images/u42oPTl2vJ11W3bK7nOVoi9vT1XxibVtIdmJNeVs.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box; /* important for padding inside width */
+}
+
+.login-box h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Make inputs and select block and full width inside the box */
+.login-input,
+.login-select {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box; /* include padding and border in width */
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus,
+.login-select:focus {
+  border-color: #0077ff;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #005fcc;
+}
+
+.login-register {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-register a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+.login-register a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-box {
+    padding: 25px 20px;
+  }
+
+  .login-box h1 {
+    font-size: 24px;
+  }
+
+  .login-input,
+  .login-select,
+  .login-button {
+    font-size: 14px;
+  }
+}
