@@ -3,9 +3,11 @@ import Login from './Pages/Login/Login'
 import Sigin from './Pages/Sigin/Sigin'
 import {Routes,Route} from 'react-router-dom'
 
+
 const App = () => {
   return (
     <div>
+    
       <Routes>
          <Route path="/" element={<Login />} />
         <Route path='/sigin' element={<Sigin/>}/>
