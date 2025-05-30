@@ -28,7 +28,17 @@ const Login = () => {
       const loginUser = await signInWithEmailAndPassword(Authentication, email, password);
       console.log(loginUser);
       alert("Login successful");
-      navigate(`/${role}DashBoard`)
+     
+      if(role=="admin"){
+        localStorage.setItem("logginadmin",JSON.stringify(loginUser))
+
+      }
+      else{
+         localStorage.setItem("logginuser",JSON.stringify(loginUser))
+
+      }
+       navigate(`/${role}DashBoard`)
+      
       
     } catch (err) {
       console.log(err);

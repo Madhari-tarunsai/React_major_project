@@ -1,11 +1,15 @@
-/* Navbar.css */
+*{
+    padding: 0;
+    margin: 0;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #222;
-  color: white;
+  background-color:green;
+  color:black;
+  padding:  12px;
 }
 
 .navbar h2 {
@@ -18,11 +22,15 @@
   gap: 15px;
 }
 
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
+.logout-button{
+    border: 3px solid black;
+    background-color: red;
+    color: white;
+    padding: 7px;
+    border-radius: 6px;
 }
-
-.navbar ul li a:hover {
-  text-decoration: underline;
+.welcome-msg{
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
 }

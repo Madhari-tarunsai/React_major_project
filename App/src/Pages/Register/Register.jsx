@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Register.css'
 import {Authentication,dataBase} from "../../FireBase/FireBase"
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword,updateProfile} from 'firebase/auth'
 import {setDoc,doc} from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom'
 
@@ -20,6 +20,9 @@ const Register = () => {
             console.log(userDetails)
             alert("Register Done Successfully")
             navigate('/login')
+            await updateProfile(userDetails.user,{
+                displayName:signin.name
+            })
             
 
         }catch(err){
