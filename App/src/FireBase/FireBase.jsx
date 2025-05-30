@@ -1,15 +1,18 @@
+
 import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth'
 import {getFirestore} from 'firebase/firestore'
 const firebaseConfig = {
-  apiKey: "AIzaSyAovCitOJ43Lmv_a47bfjo6sfRKn7mve20",
-  authDomain: "react-project-667f7.firebaseapp.com",
-  projectId: "react-project-667f7",
-  storageBucket: "react-project-667f7.firebasestorage.app",
-  messagingSenderId: "920267388337",
-  appId: "1:920267388337:web:bca35aee482c0f8636b990",
-  measurementId: "G-GKVQ5KZWCV"
+  apiKey: "AIzaSyAPAE2RAUDZSa4oGCEGz6nhcuzGKfEewUE",
+  authDomain: "telugu-matrimony-app.firebaseapp.com",
+  projectId: "telugu-matrimony-app",
+  storageBucket: "telugu-matrimony-app.firebasestorage.app",
+  messagingSenderId: "970544269910",
+  appId: "1:970544269910:web:d8bf9cad9a9b95901749f7",
+  measurementId: "G-QN3ZRC6ZW8"
 };
+
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const Auth=getAuth(app)
-export const db=getFirestore(app)
+ export const Authentication=getAuth(app)
+ export const dataBase=getFirestore(app)

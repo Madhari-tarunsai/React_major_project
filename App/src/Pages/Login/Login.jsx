@@ -1,45 +1,68 @@
 import React, { useState } from 'react';
-import {signInWithEmailAndPassword} from 'firebase/auth'
-import {Auth} from '../../FireBase/FireBase'
-import {useNavigate}from 'react-router-dom'
 import './Login.css';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { Authentication } from '../../FireBase/FireBase';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const navitage=useNavigate()
-  const[login,setLogin]=useState({email:'',password:'',role:''})
-  const handlerlogin=async(e)=>{
-    e.preventDefault()
-    try{
-      await signInWithEmailAndPassword(Auth,login.email,login.password)
-      alert("Login sucessfully")
-      navitage("/")
+    const navigate=useNavigate()
+  const [loggin, setLoggin] = useState({ email: '', password: '', role: '' });
+  const [imageSrc, setImageSrc] = useState(
+    'https://images.squarespace-cdn.com/content/v1/56b6347007eaa0749953ef98/1621280206978-TT2X17CNP4AUEX56M8T7/BZ6A1696-Edit-2.jpg?format=2500w'
+  );
 
-    }catch(err){
-      console.log(err)
-      alert("please check the email or password")
+  const handleMouseEnter = () => {
+    setImageSrc('https://cdn0.weddingwire.in/article/1262/3_2/960/jpg/82621-telugu-marriage-dates-krishnamoorthi-lead.jpeg');
+  };
+
+  const handleMouseLeave = () => {
+    setImageSrc(
+      'https://images.squarespace-cdn.com/content/v1/56b6347007eaa0749953ef98/1621280206978-TT2X17CNP4AUEX56M8T7/BZ6A1696-Edit-2.jpg?format=2500w'
+    );
+  };
+
+  const handlersub = async (e) => {
+    e.preventDefault();
+    const { email, password, role } = loggin;
+    try {
+      const loginUser = await signInWithEmailAndPassword(Authentication, email, password);
+      console.log(loginUser);
+      alert("Login successful");
+      navigate(`/${role}DashBoard`)
+      
+    } catch (err) {
+      console.log(err);
+      alert("Login failed");
     }
-
-  }
+  };
 
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>User Login</h1>
-        <form action="" onSubmit={handlerlogin}>
-        <input type="email" placeholder="Enter Email" className="login-input" onChange={(e)=>setLogin({...login,email:e.target.value,})}/>
-        <input type="password" placeholder="Enter Password" className="login-input"  onChange={(e)=>setLogin({...login,password:e.target.value,})}/>
-        <select className="login-select" defaultValue=""  onChange={(e)=>setLogin({...login,role:e.target.value,})}>
-          <option value="" disabled>Choose a Role</option>
-          <option value="farmer">Farmer</option>
-          <option value="buyer">Buyer</option>
-        </select>
-        <div className="login-actions">
-          <button className="login-button">Login</button>
+        <div className="login-image">
+          <img
+            src={imageSrc}
+            alt="Logo"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
         </div>
-        <p className="login-register">
-          I don't have an account... <a href="/sigin">Register</a>
-        </p>
-        </form>
+        <div className="login-form">
+          <h1>Join Hands Again</h1>
+          <form onSubmit={handlersub}>
+            <input type="text" placeholder="Enter Email" onChange={(e) => setLoggin({ ...loggin, email: e.target.value })} />
+            <input type="password" placeholder="Password" onChange={(e) => setLoggin({ ...loggin, password: e.target.value })} />
+            <select onChange={(e) => setLoggin({ ...loggin, role: e.target.value })}>
+              <option value="">Choose Role:</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
+            <button type="submit">Login</button>
+            <p>
+              I don't have an account... <a href="/register">Register</a>
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   );

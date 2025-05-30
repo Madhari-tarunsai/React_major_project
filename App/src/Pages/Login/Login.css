@@ -1,98 +1,109 @@
+/* Base container */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-
-  background-image: url('https://resources.easystore.co/website/blog/images/u42oPTl2vJ11W3bK7nOVoi9vT1XxibVtIdmJNeVs.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 100vh;
+  background: linear-gradient(to right, #ffe6e6, #fff0f5);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Login box */
 .login-box {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 30px 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  overflow: hidden;
+  max-width: 900px;
   width: 100%;
+}
+
+/* Image styling */
+.login-image img {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form styling */
+.login-form {
+  padding: 40px;
+  flex: 1;
+}
+
+.login-form h1 {
+  color: #cc0066;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
   text-align: center;
-  box-sizing: border-box; /* important for padding inside width */
 }
 
-.login-box h1 {
-  margin-bottom: 25px;
-  color: #333;
-  font-size: 28px;
+.login-form form {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Make inputs and select block and full width inside the box */
-.login-input,
-.login-select {
-  display: block;
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 18px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  outline: none;
-  box-sizing: border-box; /* include padding and border in width */
-  transition: border-color 0.3s ease;
-}
-
-.login-input:focus,
-.login-select:focus {
-  border-color: #0077ff;
-}
-
-.login-button {
-  width: 100%;
+.login-form input,
+.login-form select {
+  margin-bottom: 20px;
   padding: 12px;
   font-size: 16px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  border: none;
-  background-color: #0077ff;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  border-color: #cc0066;
+  outline: none;
+  box-shadow: 0 0 5px rgba(204, 0, 102, 0.3);
+}
+
+.login-form button {
+  background-color: #cc0066;
   color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.login-button:hover {
-  background-color: #005fcc;
+.login-form button:hover {
+  background-color: #b30059;
 }
 
-.login-register {
-  margin-top: 15px;
-  font-size: 14px;
+.login-form p {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.login-register a {
-  color: #0077ff;
+.login-form a {
+  color: #cc0066;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.login-register a:hover {
+.login-form a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive design */
+@media (max-width: 768px) {
   .login-box {
-    padding: 25px 20px;
+    flex-direction: column;
   }
 
-  .login-box h1 {
-    font-size: 24px;
+  .login-image img {
+    width: 100%;
+    height: auto;
   }
 
-  .login-input,
-  .login-select,
-  .login-button {
-    font-size: 14px;
+  .login-form {
+    padding: 20px;
   }
 }
