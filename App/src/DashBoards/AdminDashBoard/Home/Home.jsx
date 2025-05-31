@@ -1,6 +1,7 @@
 import React from 'react'
+import{Routes,Route} from 'react-router-dom'
 
-const Home = () => {
+const Home = ({}) => {
   return (
     <div>Home</div>
   )
