@@ -36,6 +36,7 @@ const Navbar = ({ role }) => {
               <li><Link to="/adminDashBoard">Home</Link></li>
               <li><Link to="/uploadDetails">Upload Details</Link></li>
               <li><Link to="/showDetail">Show Detail</Link></li>
+              <li><Link to="/showDetail">Connection</Link></li>
             </>
           ) : (
             <>
