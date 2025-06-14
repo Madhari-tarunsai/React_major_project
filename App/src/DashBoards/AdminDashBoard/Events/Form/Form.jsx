@@ -16,10 +16,10 @@ const Form = () => {
   const handleUpload = async (e) => {
     e.preventDefault();
     try {
-      // ✅ Store directly inside "admin" collection
+     
       await addDoc(collection(dataBase, "admin"), eventDetails);
       alert("Your event is added, Boss! Thank you.");
-      navigate("/AdminDashBoard/home"); // redirect to Admin Home
+      navigate("/AdminDashBoard/home"); 
     } catch (error) {
       console.error("Error uploading event:", error);
       alert("Failed to upload event.");

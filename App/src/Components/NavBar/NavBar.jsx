@@ -49,7 +49,7 @@ const Navbar = ({ role }) => {
             <>
             <li><Link to="/AdminDashBoard/home"> Home <IoHomeOutline /></Link></li>
             <li><Link to="Events">Post_Events</Link></li>
-             <li><Link to="/AdminDashBoard">Join_Peoples <HiChatBubbleLeftRight /></Link></li>
+             <li><Link to="JoinPeople">Join_Peoples <HiChatBubbleLeftRight /></Link></li>
              <li><Link to="MyProfile">My_Profile <SlUserFollowing /></Link></li>
             </> // Add admin links here if needed
           ) : (

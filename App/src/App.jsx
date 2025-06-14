@@ -18,6 +18,7 @@ import Banner from "./DashBoards/AdminDashBoard/Banner/Banner";
 import MyProfile from "./DashBoards/AdminDashBoard/MyProfile/MyProfile";
 import Event from "./DashBoards/AdminDashBoard/Events/Event";
 import Form from "./DashBoards/AdminDashBoard/Events/Form/Form";
+import JoinPeople from "./DashBoards/AdminDashBoard/JoinPeoples/JoinPeople";
 
 const App = () => {
   return (
@@ -49,7 +50,9 @@ const App = () => {
         <Route path='MyProfile' element={<MyProfile/>}/>
         <Route path='Events' element={<Event/>}/>
         <Route path="Events/Form" element={<Form/>}/>
+        <Route path="JoinPeople" element={<JoinPeople/>}/>
         </Route>
+        
       </Routes>
     </div>
   );
