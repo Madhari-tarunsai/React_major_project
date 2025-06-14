@@ -1,0 +1,146 @@
+.stories-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.stories-title {
+  font-size: 2.5rem;
+  color: #1a4ed8;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.story-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.story-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(26, 78, 216, 0.9);
+  color: #fff;
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.story-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* 📱 Phones (<=600px) */
+@media (max-width: 600px) {
+  .stories-title {
+    font-size: 1.8rem;
+  }
+
+  .story-card img {
+    height: 200px;
+  }
+
+  .overlay h2 {
+    font-size: 1rem;
+  }
+
+  .overlay p {
+    font-size: 0.85rem;
+  }
+}
+
+/* 📱 Tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .stories-title {
+    font-size: 2.2rem;
+  }
+
+  .story-card img {
+    height: 250px;
+  }
+
+  .overlay h2 {
+    font-size: 1.15rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 💻 Desktop (1025px–1600px) */
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .stories-title {
+    font-size: 2.5rem;
+  }
+
+  .story-card img {
+    height: 300px;
+  }
+}
+
+/* 🖥️ Large Screens / 4K TVs (1601px+) */
+@media (min-width: 1601px) {
+  .stories-section {
+    padding: 100px 40px;
+  }
+
+  .stories-title {
+    font-size: 3rem;
+  }
+
+  .story-card img {
+    height: 350px;
+  }
+
+  .overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 1.1rem;
+  }
+}

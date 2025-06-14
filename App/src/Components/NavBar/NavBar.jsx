@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { IoIosPeople } from "react-icons/io";
+import { GiLovers } from "react-icons/gi";
+import { IoHomeOutline } from "react-icons/io5";
+import { AiFillAndroid } from "react-icons/ai";
+import { FcServices } from "react-icons/fc";
+import { MdSupportAgent } from "react-icons/md";
+import { HiChatBubbleLeftRight } from "react-icons/hi2";
+import { SlUserFollowing } from "react-icons/sl";
 import './Navbar.css';
 
 const Navbar = ({ role }) => {
@@ -22,7 +30,13 @@ const Navbar = ({ role }) => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <h2>{role === 'admin' ? 'Admin Panel' : 'User Panel'}</h2>
+        <h2>
+          {role === 'admin' ? 'AdminPannel' : (
+            <>
+              <span className="brand-name">Shaddi</span><span className="dot-com">.com</span>
+            </>
+          )}
+        </h2>
       </div>
 
       <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -33,25 +47,28 @@ const Navbar = ({ role }) => {
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
           {role === 'admin' ? (
             <>
-              <li><Link to="/adminDashBoard">Home</Link></li>
-              <li><Link to="/uploadDetails">Upload Details</Link></li>
-              <li><Link to="/showDetail">Show Detail</Link></li>
-              <li><Link to="/showDetail">Connection</Link></li>
-            </>
+            <li><Link to="/AdminDashBoard/home"> Home <IoHomeOutline /></Link></li>
+            <li><Link to="Events">Post_Events</Link></li>
+             <li><Link to="/AdminDashBoard">Join_Peoples <HiChatBubbleLeftRight /></Link></li>
+             <li><Link to="MyProfile">My_Profile <SlUserFollowing /></Link></li>
+            </> // Add admin links here if needed
           ) : (
             <>
-              <li><Link to="/UserDashBoard">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/peoples">Peoples</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/UserDashBoard"><IoHomeOutline /> Home</Link></li>
+              <li><Link to="about"><AiFillAndroid /> About</Link></li>
+              <li><Link to="stories"><GiLovers /> Stories</Link></li>
+              <li><Link to="services"><FcServices /> Services</Link></li>
+              <li><Link to="peoples"><IoIosPeople /> Peoples</Link></li>
+              <li><Link to="support">Support <MdSupportAgent /></Link></li>
             </>
           )}
         </ul>
       </div>
 
       <div className="navbar-right">
-        {displayName && <span className="welcome-msg">Welcome: {displayName}</span>}
+        {displayName && (
+          <span className="welcome-msg">Welcome: {displayName}</span>
+        )}
         <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
     </nav>

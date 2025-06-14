@@ -1,0 +1,83 @@
+.event-container {
+  padding: 60px 20px;
+  background: #f7f9fc;
+  text-align: center;
+  height: 100vh;
+}
+
+.event-heading {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #c2185b;
+  font-weight: bold;
+}
+
+.event-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.event-card h3 {
+  font-size: 1.3rem;
+  color: #d81b60;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  margin: 5px 0;
+  color: #444;
+}
+
+.event-card .description {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Padding */
+@media (max-width: 768px) {
+  .event-container {
+    padding: 40px 10px;
+  }
+
+  .event-heading {
+    font-size: 1.8rem;
+  }
+}
+.upload-btn-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.upload-btn {
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #ad1457;
+  transform: scale(1.05);
+}

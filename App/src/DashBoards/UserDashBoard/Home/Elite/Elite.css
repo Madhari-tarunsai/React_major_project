@@ -1,0 +1,117 @@
+.elite-container {
+  background: #fff7f5;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.elite-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.elite-left {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.elite-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.elite-tagline {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.elite-tagline::before {
+  content: "🛡️";
+}
+
+.elite-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.elite-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.elite-right h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #111;
+}
+
+.elite-subheading {
+  color: #a10000;
+  font-weight: 600;
+  margin: 15px 0 25px;
+  font-size: 1.2rem;
+}
+
+.elite-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.elite-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.elite-features img {
+  width: 40px;
+  height: 40px;
+}
+
+.elite-features strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 1.05rem;
+}
+
+.elite-features p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .elite-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .elite-right {
+    text-align: center;
+  }
+
+  .elite-features li {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .elite-features img {
+    margin-bottom: 10px;
+  }
+}

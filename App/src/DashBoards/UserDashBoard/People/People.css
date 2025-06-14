@@ -1,0 +1,42 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.people-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #357ab7;
+}
+
+/* Responsive adjustments (optional if already flex-wrap is working well) */
+@media (max-width: 480px) {
+  .button-group button {
+    width: 100%;
+    max-width: 250px;
+  }
+}

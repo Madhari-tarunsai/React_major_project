@@ -1,0 +1,179 @@
+.info-section {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 60px 20px;
+  
+  text-align: center;
+}
+
+.download-banner h2 {
+  color: #d9534f;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.app-buttons img {
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.app-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.info-logo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 25px;
+}
+
+.info-description {
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.info-description strong {
+  color: #c0392b;
+}
+
+.note {
+  font-size: 13px;
+  color: #555;
+  margin-top: 20px;
+}
+
+.info-links {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.info-links a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.info-links a:hover {
+  text-decoration: underline;
+}
+/* === MEDIA QUERIES === */
+
+/* Mobile Phones (max-width: 575px) */
+@media (max-width: 575px) {
+  .info-section {
+    padding: 40px 10px;
+  }
+
+  .download-banner h2 {
+    font-size: 18px;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .app-buttons img {
+    width: 140px;
+  }
+
+  .info-logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .info-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .note {
+    font-size: 12px;
+  }
+
+  .info-links {
+    font-size: 12px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+/* Tablets (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .info-section {
+    padding: 50px 15px;
+  }
+
+  .download-banner h2 {
+    font-size: 20px;
+  }
+
+  .app-buttons {
+    gap: 18px;
+  }
+
+  .app-buttons img {
+    width: 150px;
+  }
+
+  .info-description {
+    font-size: 15px;
+    max-width: 85%;
+  }
+
+  .note, .info-links {
+    font-size: 13px;
+  }
+}
+
+/* Laptops (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .info-section {
+    padding: 60px 30px;
+  }
+
+  .download-banner h2 {
+    font-size: 22px;
+  }
+
+  .info-description {
+    font-size: 16px;
+    max-width: 800px;
+  }
+
+  .app-buttons img {
+    width: 160px;
+  }
+}
+
+/* Large Screens / TV (1200px and up) */
+@media (min-width: 1200px) {
+  .info-section {
+    padding: 80px 40px;
+  }
+
+  .download-banner h2 {
+    font-size: 26px;
+  }
+
+  .info-description {
+    font-size: 17px;
+    max-width: 1000px;
+  }
+
+  .app-buttons img {
+    width: 170px;
+  }
+}

@@ -1,0 +1,84 @@
+/* Container */
+.celebration-container {
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #fce4ec, #f8bbd0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.celebration-container h2 {
+  font-size: 2.5rem;
+  color: #880e4f;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Event List Grid */
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 cards per row */
+  gap: 25px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* Individual Event Card */
+.event-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Title */
+.event-card h3 {
+  font-size: 1.4rem;
+  color: #d81b60;
+  margin-bottom: 10px;
+}
+
+/* Event Info */
+.event-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Strong Label */
+.event-card p strong {
+  color: #6a1b9a;
+}
+
+/* Responsive Layouts */
+@media (max-width: 1400px) {
+  .event-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .event-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+}

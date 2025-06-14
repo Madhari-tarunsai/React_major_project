@@ -1,0 +1,119 @@
+/* Full-page background container */
+.form-background {
+  min-height: 100vh;
+  background: url('https://content.jdmagicbox.com/comp/def_content_category/event-organisers-for-wedding/event-organisers-for-wedding3-event-organisers-for-wedding-3-3rxun-event-organisers-for-wedding-1-8939d.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Form styling */
+form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff4081;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background: #ff4081;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #c2185b;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+}
+.event-container {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.event-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.event-card button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.event-card button:hover {
+  background-color: #0056b3;
+}
+
+.event-card button:last-child {
+  background-color: #dc3545;
+}
+
+.event-card button:last-child:hover {
+  background-color: #b52a37;
+}

@@ -1,0 +1,105 @@
+.sites-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.cta-banner {
+  background-color: #ff6e6e;
+  color: white;
+  padding: 20px 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.cta-banner p {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.cta-banner button {
+  background-color: white;
+  color: #ff6e6e;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-banner button:hover {
+  background-color: #ffe5e5;
+}
+
+.sites-title {
+  font-size: 1.8rem;
+  color: #ff5a5f;
+  margin-bottom: 30px;
+}
+
+.sites-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.site-column {
+  max-width: 300px;
+  text-align: left;
+}
+
+.site-column h3 {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.site-column p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.site-column a {
+  color: #0099cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 10px;
+}
+
+.other-sites {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.other-sites h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.other-sites p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sites-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-column {
+    max-width: 100%;
+  }
+}
