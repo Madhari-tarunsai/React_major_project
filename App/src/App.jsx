@@ -19,7 +19,7 @@ import MyProfile from "./DashBoards/AdminDashBoard/MyProfile/MyProfile";
 import Event from "./DashBoards/AdminDashBoard/Events/Event";
 import Form from "./DashBoards/AdminDashBoard/Events/Form/Form";
 import JoinPeople from "./DashBoards/AdminDashBoard/JoinPeoples/JoinPeople";
-import Opportunities from "./DashBoards/UserDashBoard/Services/Opportunities/Opportunities";
+
 
 const App = () => {
   return (
@@ -35,15 +35,15 @@ const App = () => {
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="stories" element={<Stories/>} />
-          <Route path='services' element={<Services/>}>
-          <Route path='services/Opportunities' element={<Opportunities/>}/>
-          </Route>
+          <Route path='services' element={<Services/>}/>
           <Route path='support' element={<Support/>}/>
           <Route path='peoples' element={<People/>}/>
           <Route path='peoples/Celebration' element={<Celebrations/>}/>
           <Route path='peoples/Upload' element={<Upload/>}/>
           <Route path='peoples/ShownIntrest' element={<ShownInterest/>}/>
            <Route path='peoples/Astrology' element={<Astrology/>}/>
+           
+           
         </Route>
 
         {/* Admin Dashboard */}
@@ -54,6 +54,8 @@ const App = () => {
         <Route path='Events' element={<Event/>}/>
         <Route path="Events/Form" element={<Form/>}/>
         <Route path="JoinPeople" element={<JoinPeople/>}/>
+       
+       
         </Route>
         
       </Routes>
