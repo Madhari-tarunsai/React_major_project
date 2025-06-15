@@ -31,7 +31,9 @@ const Navbar = ({ role }) => {
     <nav className="navbar">
       <div className="navbar-left">
         <h2>
-          {role === 'admin' ? 'AdminPannel' : (
+          {role === 'admin' ? <>
+              <span className="brand-name">Admin</span><span className="dot-com">pannel</span>
+            </> : (
             <>
               <span className="brand-name">Shaddi</span><span className="dot-com">.com</span>
             </>

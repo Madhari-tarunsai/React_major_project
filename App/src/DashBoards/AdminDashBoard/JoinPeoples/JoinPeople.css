@@ -1,0 +1,27 @@
+.joinpeople-container {
+  padding: 40px;
+  background-color: #fefefe;
+  min-height: 100vh;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #374151;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}

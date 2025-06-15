@@ -23,10 +23,10 @@
 
 /* Individual Profile Card */
 .profile-card {
-  background:lightyellow;
+  background: lightyellow;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 260px;
   text-align: left;
   transition: transform 0.2s ease-in-out;
@@ -57,19 +57,54 @@
   font-size: 0.95rem;
 }
 
-/* Buttons */
+/* Button Container */
+.profile-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons Base Style */
 .profile-card button {
   color: white;
   border: none;
   border-radius: 6px;
   padding: 8px 16px;
-  margin-right: 10px;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Save Button */
+.save-btn {
+  background-color: orange;
+}
 
+.save-btn:hover {
+  background-color: darkorange;
+  transform: scale(1.05);
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: green;
+}
+
+.contact-btn:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: crimson;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
 
 /* Responsive */
 @media (max-width: 768px) {

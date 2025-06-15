@@ -8,14 +8,28 @@ const PData = () => {
   const [profiles, setProfiles] = useState([]);
 
   useEffect(() => {
-    axios.get('https://684a93b0165d05c5d3595dea.mockapi.io/marriages')
-      .then((res) => {
-        setProfiles(res.data);
-      })
-      .catch((err) => {
-        console.error('Error fetching data:', err);
-      });
+    fetchProfiles();
   }, []);
+
+  const fetchProfiles = async () => {
+    try {
+      const res = await axios.get('https://684a93b0165d05c5d3595dea.mockapi.io/marriages');
+      setProfiles(res.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  // const handleDelete = async (id) => {
+  //   if (window.confirm("Are you sure you want to delete this profile?")) {
+  //     try {
+  //       await axios.delete(`https://684a93b0165d05c5d3595dea.mockapi.io/marriages/${id}`);
+  //       setProfiles(prev => prev.filter(profile => profile.id !== id)); 
+  //     } catch (error) {
+  //       console.error('Delete failed:', error);
+  //     }
+  //   }
+  // };
 
   return (
     <div className="pdata-container">
@@ -29,11 +43,14 @@ const PData = () => {
             <p><strong>Caste:</strong> {profile.caste}</p>
             <p><strong>Religion:</strong> {profile.religion}</p>
             <p><strong>Age:</strong> {profile.age}</p>
-            <p><strong>City:</strong> {profile.location}</p>
+            <p><strong>City:</strong> {profile.city}</p>
             <p><strong>Profession:</strong> {profile.profession}</p>
             <p><strong>Education:</strong> {profile.education}</p>
-            <button style={{backgroundColor:'orange'}}>save <BsBookmarkHeartFill/> </button>
-            <button style={{backgroundColor:'green'}}>contact <FaPhone/></button>
+            <div className="profile-buttons">
+              <button className="save-btn">Save <BsBookmarkHeartFill /></button>
+              <button className="contact-btn">Contact <FaPhone /></button>
+              {/* <button className="delete-btn" onClick={() => handleDelete(profile.id)}>Delete <FaTrash /></button> */}
+            </div>
           </div>
         ))}
       </div>
