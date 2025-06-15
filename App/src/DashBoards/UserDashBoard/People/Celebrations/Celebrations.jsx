@@ -9,7 +9,7 @@ const Celebrations = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        // ✅ Fetch directly from "admin" collection
+        
         const querySnapshot = await getDocs(collection(dataBase, "admin"));
         const eventData = querySnapshot.docs.map(doc => doc.data());
         setEvents(eventData);

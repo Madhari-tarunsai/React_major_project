@@ -40,7 +40,7 @@ const App = () => {
           <Route path='peoples/Celebration' element={<Celebrations/>}/>
           <Route path='peoples/Upload' element={<Upload/>}/>
           <Route path='peoples/ShownIntrest' element={<ShownInterest/>}/>
-           <Route path='peoples/astrology' element={<Astrology/>}/>
+           <Route path='peoples/Astrology' element={<Astrology/>}/>
         </Route>
 
         {/* Admin Dashboard */}
