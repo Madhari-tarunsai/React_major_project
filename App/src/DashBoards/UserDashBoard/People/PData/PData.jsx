@@ -20,16 +20,7 @@ const PData = () => {
     }
   };
 
-  // const handleDelete = async (id) => {
-  //   if (window.confirm("Are you sure you want to delete this profile?")) {
-  //     try {
-  //       await axios.delete(`https://684a93b0165d05c5d3595dea.mockapi.io/marriages/${id}`);
-  //       setProfiles(prev => prev.filter(profile => profile.id !== id)); 
-  //     } catch (error) {
-  //       console.error('Delete failed:', error);
-  //     }
-  //   }
-  // };
+ 
 
   return (
     <div className="pdata-container">
@@ -49,7 +40,6 @@ const PData = () => {
             <div className="profile-buttons">
               <button className="save-btn">Save <BsBookmarkHeartFill /></button>
               <button className="contact-btn">Contact <FaPhone /></button>
-              {/* <button className="delete-btn" onClick={() => handleDelete(profile.id)}>Delete <FaTrash /></button> */}
             </div>
           </div>
         ))}

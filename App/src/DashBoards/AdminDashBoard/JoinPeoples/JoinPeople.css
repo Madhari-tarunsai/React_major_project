@@ -25,3 +25,16 @@ th {
 td {
   background-color: #f9f9f9;
 }
+.loader {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 20px auto;
+  text-align: center;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
