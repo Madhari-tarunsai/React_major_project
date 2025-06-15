@@ -42,7 +42,7 @@ const Home = () => {
       {showAlert && (
         <div className='alert-card'>
           <h3>Hey User! 😊</h3>
-          <p>Please register if you're interested in selecting the best life partner 💑</p>
+          <p>welcome our website for  the best life partner 💑</p>
         </div>
       )}
       <Assisent/>

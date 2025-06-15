@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
 import brideImage from '../../../assets/Images/image01.png';
 import dressImage from '../../../assets/Images/image02.png';
@@ -6,14 +6,23 @@ import Sites from './Sites/Sites';
 import Trusted from './Trusted/Trusted';
 
 const About = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleJoin = () => {
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 3000); // hide after 3 sec
+  };
+
   return (
     <section className="about-section">
       <h2 className="about-heading">About Shaadi.com</h2>
+
       <div className="about-content">
         <div className="about-left">
           <img src={brideImage} alt="Shaadi.com Bride" className="main-img" />
           <img src={dressImage} alt="Traditional Attire" className="dress-overlay" />
         </div>
+
         <div className="about-right">
           <h3>
             <span className="dropcap">W</span>elcome to Shaadi.com
@@ -27,12 +36,18 @@ const About = () => {
           <p>
             Whether you're searching for a partner who shares your values, culture, or lifestyle, Shaadi.com is here to guide your journey to love. Join us and be a part of countless success stories!
           </p>
-          <button className="discover-btn">Join Now</button>
+          <button className="discover-btn" onClick={handleJoin}>Join Now</button>
+
+          {showAlert && (
+            <div className="alert-card">
+              If you want to join, please take a Premium account!
+            </div>
+          )}
         </div>
       </div>
-     
-     <Sites/>
-     <Trusted/>
+
+      <Sites />
+      <Trusted />
     </section>
   );
 };

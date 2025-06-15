@@ -16,7 +16,7 @@ const Loaction = () => {
       <div className="location-inner">
         <div className="location-left">
           <h2>
-            <span className="bold-text">Shaadi.com</span>{' '}
+            <span className="bold-text" style={{color:'green'}}>Shaadi.com</span>{' '}
             <span className="orange-text">Retail Outlet</span>
           </h2>
           <p className="location-subtext">
