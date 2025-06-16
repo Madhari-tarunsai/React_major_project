@@ -8,7 +8,7 @@ import { FcServices } from "react-icons/fc";
 import { MdSupportAgent } from "react-icons/md";
 import { HiChatBubbleLeftRight } from "react-icons/hi2";
 import { SlUserFollowing } from "react-icons/sl";
-import './Navbar.css';
+import './NavBar.css';
 
 const Navbar = ({ role }) => {
   const [menuOpen, setMenuOpen] = useState(false);
