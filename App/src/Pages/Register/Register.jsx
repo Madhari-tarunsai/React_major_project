@@ -25,19 +25,20 @@ const Register = () => {
       }
     }
 
-    setLoading(true); // Start loading
-
+    setLoading(true); 
     try {
       const userDetails = await createUserWithEmailAndPassword(Authentication, email, password);
+            await updateProfile(userDetails.user, { displayName:signin.name });
 
-      await setDoc(doc(dataBase, `${role}`, userDetails.user.uid), {
-        uid: userDetails.user.uid,
+
+      await setDoc(doc(dataBase, `${role}`, signin.name), {
+     
         name,
         email,
         role,
       });
+console.log(userDetails);
 
-      await updateProfile(userDetails.user, { displayName: name });
 
       alert('Register Done Successfully');
       navigate('/login');
@@ -45,7 +46,7 @@ const Register = () => {
       console.error('Error during registration:', err);
       alert(err.message);
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false);
     }
   };
 
