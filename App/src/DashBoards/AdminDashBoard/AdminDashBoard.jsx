@@ -1,6 +1,6 @@
 
 import Navbar from '../../Components/NavBar/NavBar';
-import './AdminDashboard.css';
+import './AdminDashBoard.css';
 import { Outlet } from 'react-router-dom';
 
 const AdminDashBoard = () => {
