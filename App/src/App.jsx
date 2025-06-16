@@ -21,7 +21,7 @@ import Form from "./DashBoards/AdminDashBoard/Events/Form/Form";
 import JoinPeople from "./DashBoards/AdminDashBoard/JoinPeoples/JoinPeople";
 import Footer from "./Footer/Footer";
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const App = () => {
   const location = useLocation();
