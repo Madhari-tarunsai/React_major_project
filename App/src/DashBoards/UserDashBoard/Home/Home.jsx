@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import video from '../../../assets/Videos/Video01.mp4';
+import video from '../../../assets/Videos/video01.mp4';
 import Assisent from './Assisent/Assisent';
 import Elite from './Elite/Elite';
 import Location from './Location/Location';
