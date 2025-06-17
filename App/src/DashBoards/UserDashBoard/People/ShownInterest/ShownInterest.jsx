@@ -32,6 +32,7 @@
 
 // export default ShownInterest
 import React, { useEffect, useState } from 'react'
+import './ShownInterest.css'
 import { dataBase } from '../../../../FireBase/FireBase';
 import { getDoc, doc, updateDoc } from 'firebase/firestore';
 

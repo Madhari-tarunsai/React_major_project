@@ -1,0 +1,88 @@
+.shown-interest-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.responsive-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 768px) {
+  .responsive-table th,
+  .responsive-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .delete-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
