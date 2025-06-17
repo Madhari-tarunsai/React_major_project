@@ -15,15 +15,16 @@ const Register = () => {
     const { name, email, password, role } = signin;
 
     if (role === 'admin') {
-      if (
-        email !== 'tarunsai@gmail.com' ||
-        password !== '1234567890' ||
-        name.toLowerCase() !== 'tarunsai'
-      ) {
-        alert('Access denied: Only authorized person can register as admin.');
-        return;
-      }
-    }
+  if (
+    email !== 'tarunsai@gmail.com' ||
+    password !== '1234567890' ||
+    name.toLowerCase() !== 'tarunsai'
+  ) {
+    alert('Access denied: Only authorized person can register as admin.');
+    return;
+  }
+}
+
 
     setLoading(true); 
     try {

@@ -24,10 +24,14 @@ const Login = () => {
 
   const handlersub = async (e) => {
     e.preventDefault();
+    console.log(loggin);
+    
     const { email, password, role } = loggin;
     setLoading(true);
     try {
       const loginUser = await signInWithEmailAndPassword(Authentication, email, password);
+      console.log(loginUser);
+      
       alert("Login successful");
 
       if (role === "admin") {

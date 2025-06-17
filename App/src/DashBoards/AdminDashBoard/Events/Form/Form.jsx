@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Form.css';
 import { dataBase } from "../../../../FireBase/FireBase";
-import { collection, addDoc } from 'firebase/firestore';
+import { arrayUnion, doc,  updateDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
+  const adminLoggin=JSON.parse(localStorage.getItem('logginadmin'))
+  console.log(adminLoggin)
   const navigate = useNavigate();
   const [eventDetails, setEventDetails] = useState({
     name: '',
@@ -17,7 +19,9 @@ const Form = () => {
     e.preventDefault();
     try {
      
-      await addDoc(collection(dataBase, "admin"), eventDetails);
+      await updateDoc(doc(dataBase, "admin",adminLoggin.user.displayName),{
+        eventDetails:arrayUnion(eventDetails)
+      });
       alert("Your event is added, Boss! Thank you.");
       navigate("/AdminDashBoard/home"); 
     } catch (error) {
