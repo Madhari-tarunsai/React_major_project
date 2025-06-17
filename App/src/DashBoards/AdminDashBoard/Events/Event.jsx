@@ -9,24 +9,14 @@ const Event = () => {
 
     }
   const events = [
-    {
-      title: "TANA Matrimony Meet‑Up (USA)",
-      date: "July 4, 2025",
-      location: "Novi, Michigan",
-      description: "A special Telugu matrimonial gathering hosted by TANA for professionals and families.",
-    },
+    
     {
       title: "Shaadi Live – Virtual Speed Match",
       date: "Every Weekend",
       location: "Shaadi.com Platform",
       description: "Meet up to 10 matches in 1 hour via live video chat. Premium Shaadi.com users invited weekly.",
     },
-    {
-      title: "Telugu Speed Dating – Online",
-      date: "June 8, 2025",
-      location: "Zoom (USA Participants)",
-      description: "10-minute video calls to meet Telugu singles across the USA.",
-    },
+   
     {
       title: "APTA Matrimony Event (Virtual)",
       date: "March 29, 2025",

@@ -69,7 +69,7 @@ const Navbar = ({ role }) => {
 
       <div className="navbar-right">
         {displayName && (
-          <span className="welcome-msg">Welcome: {displayName}</span>
+          <span className="welcome-msg">Welcome: {displayName}<img src="https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small_2x/user-icon-on-transparent-background-free-png.png" alt="" style={{height:'60px',width:'60px',objectFit:'contain'}} /> </span>
         )}
         <button onClick={handleLogout} className="logout-button">Logout</button>
       </div>
