@@ -3,7 +3,7 @@ import './Register.css';
 import { Authentication, dataBase } from '../../FireBase/FireBase';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { setDoc, doc } from 'firebase/firestore';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -86,7 +86,7 @@ console.log(userDetails);
               {loading ? 'Registering...' : 'Register'}
             </button>
             <p>
-              I already have an account... <a href="/login">Login</a>
+              I already have an account... <Link to={"/login"}>Login</Link>
             </p>
           </form>
           {loading && <div className="loading-spinner"></div>}
