@@ -20,6 +20,7 @@ import Event from "./DashBoards/AdminDashBoard/Events/Event";
 import Form from "./DashBoards/AdminDashBoard/Events/Form/Form";
 import JoinPeople from "./DashBoards/AdminDashBoard/JoinPeoples/JoinPeople";
 import Footer from "./Footer/Footer";
+import Maps from "./DashBoards/UserDashBoard/Home/Maps/Maps";
 
 // import { useEffect } from "react";
 
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/userDashBoard" element={<UserDashBoard />}>
           <Route index element={<Navigate to="home" replace />} />
           <Route path="home" element={<Home />} />
+          <Route path='home/map' element={<Maps/>}/>
           <Route path="about" element={<About />} />
           <Route path="stories" element={<Stories />} />
           <Route path="services" element={<Services />} />

@@ -8,7 +8,7 @@ const Loaction = () => {
   const handlerclick = (e) => {
     e.preventDefault();
     alert("Thank you for visiting the store");
-    navigate('/maps'); 
+    navigate('/userDashBoard/home/map'); 
   };
 
   return (
