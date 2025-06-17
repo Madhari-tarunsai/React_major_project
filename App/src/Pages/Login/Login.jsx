@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { Authentication } from '../../FireBase/FireBase';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -76,7 +76,7 @@ const Login = () => {
               </select>
               <button type="submit" disabled={loading}>Login</button>
               <p>
-                I don't have an account... <a href="/register">Register</a>
+                I don't have an account... <Link to={"/register"}>Register</Link>
               </p>
             </form>
           </div>
