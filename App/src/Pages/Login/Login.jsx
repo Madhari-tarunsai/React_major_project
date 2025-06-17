@@ -22,32 +22,40 @@ const Login = () => {
     );
   };
 
-  const handlersub = async (e) => {
-    e.preventDefault();
-    console.log(loggin);
-    
-    const { email, password, role } = loggin;
-    setLoading(true);
-    try {
-      const loginUser = await signInWithEmailAndPassword(Authentication, email, password);
-      console.log(loginUser);
-      
-      alert("Login successful");
+ const handlersub = async (e) => {
+  e.preventDefault();
+  console.log(loggin);
+  
+  const { email, password, role } = loggin;
+  setLoading(true);
+  try {
+    const loginUser = await signInWithEmailAndPassword(Authentication, email, password);
+    console.log(loginUser);
 
-      if (role === "admin") {
-        localStorage.setItem("logginadmin", JSON.stringify(loginUser));
-      } else {
-        localStorage.setItem("logginuser", JSON.stringify(loginUser));
-      }
-
-      navigate(`/${role}DashBoard`);
-    } catch (err) {
-      console.log(err);
-      alert("Login failed");
-    } finally {
+    // Check if admin email is correct
+    if (role === "admin" && email !== "tarunsai@gmail.com") {
+      alert("Only tarunsai@gmail.com is allowed as admin.");
       setLoading(false);
+      return;
     }
-  };
+
+    alert("Login successful");
+
+    if (role === "admin") {
+      localStorage.setItem("logginadmin", JSON.stringify(loginUser));
+    } else {
+      localStorage.setItem("logginuser", JSON.stringify(loginUser));
+    }
+
+    navigate(`/${role}DashBoard`);
+  } catch (err) {
+    console.log(err);
+    alert("Login failed");
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <>
