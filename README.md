@@ -43,3 +43,15 @@ State Management (useState/useEffect) – To handle UI updates and dynamic data
 
 I integrated an Instant Astrology Match System that analyzes key astrological parameters (like name, birth month, or zodiac sign) of both users and provides a real-time compatibility score. This personalized matchmaking experience goes beyond basic profile matching, adding a traditional touch that aligns with cultural expectations while using modern tech.
 
+🚀Websit Output:
+
+#FireBase for Data Store
+![Screenshot (321)](https://github.com/user-attachments/assets/4bf3c9d7-ed0f-466d-ae6b-602d3d5cb7ba)
+
+#Admin And User Dashboard Data Store in FireStroe
+![Screenshot (322)](https://github.com/user-attachments/assets/6ce3b9fc-d431-4111-b147-5ff15811bcd6)
+![Screenshot (323)](https://github.com/user-attachments/assets/1d9dd8f8-0665-49a9-a042-bf4a1e6d7b5e)
+
+
+
+
