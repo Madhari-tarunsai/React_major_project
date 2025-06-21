@@ -45,46 +45,46 @@ I integrated an Instant Astrology Match System that analyzes key astrological pa
 
 🚀Websit Output:
 
-# FireBase for Data Store
+# 🔥FireBase for Data Store
 ![Screenshot (321)](https://github.com/user-attachments/assets/4bf3c9d7-ed0f-466d-ae6b-602d3d5cb7ba)
 
-# Admin And User Dashboard Data Store in FireStroe
+# 🧑‍💻Admin And User Dashboard Data Store in FireStroe
 ![Screenshot (322)](https://github.com/user-attachments/assets/6ce3b9fc-d431-4111-b147-5ff15811bcd6)
 ![Screenshot (323)](https://github.com/user-attachments/assets/1d9dd8f8-0665-49a9-a042-bf4a1e6d7b5e)
 
-# LoginPage
+# 🔒LoginPage
 ![Screenshot (294)](https://github.com/user-attachments/assets/292c5c6c-8c19-446e-bc7e-32c0232d4858)
 
-# Registerpage
+# 🔐Registerpage
 ![Screenshot (295)](https://github.com/user-attachments/assets/5dae25c2-8af5-4379-a424-cf91477151b8)
 
-# Admin DashBoard HomePage
+# 🧑‍💻Admin DashBoard HomePage
 ![Screenshot (296)](https://github.com/user-attachments/assets/3dae30bb-1d9f-4d90-a58f-183ab37ecff2)
 
-# Admin Post The Event That visual to Users
+# 📭Admin Post The Event That visual to Users
 ![Screenshot (297)](https://github.com/user-attachments/assets/ab912fb4-4187-4c3f-8bf7-a9fa91a9ff6d)
 
-# How many user are login that details will visible to Admin DashBoard
+# 📈How many user are login that details will visible to Admin DashBoard
 ![Screenshot (298)](https://github.com/user-attachments/assets/d69cc2c1-95c8-41f0-b742-e683bd13ca93)
 
-# User's DashBoard HomePage
+# 🧑‍💻User's DashBoard HomePage
 ![Screenshot (299)](https://github.com/user-attachments/assets/e6b012c9-1fd7-47bc-9767-f947ae3588a2)
 ![Screenshot (301)](https://github.com/user-attachments/assets/f4e8d990-cf6c-4b2a-a347-9a4e17047c88)
 ![Screenshot (302)](https://github.com/user-attachments/assets/1c2bcc1d-a487-4e89-ae7f-8fcac0370ff4)
 ![Screenshot (303)](https://github.com/user-attachments/assets/f13a7891-943b-483a-8286-2e83c07f5ed0)
 ![Screenshot (304)](https://github.com/user-attachments/assets/976dc7af-02cd-4814-996f-42fd4caa9fe3)
 
-# User's DashBoard AboutPage
+# 🔊User's DashBoard AboutPage
 ![Screenshot (305)](https://github.com/user-attachments/assets/0a229305-695d-4e58-8f11-95c70213d2b8)
 ![Screenshot (306)](https://github.com/user-attachments/assets/1f44c7da-91d5-4c60-8e7a-5dee21815509)
 
-# Stories of the people in Shaadi.com
+# 💝Stories of the people in Shaadi.com
 ![Screenshot (307)](https://github.com/user-attachments/assets/ba953f1d-d5ed-40a1-b16e-0f088d3ac469)
 
-# Reviews Given By People's
+# 🏅🏆Reviews Given By People's
 ![Screenshot (308)](https://github.com/user-attachments/assets/c956568b-ce63-4b1e-b1a4-50632f97c343)
 
-# User's DashBoard ServicesPage
+# ⚙️User's DashBoard ServicesPage
 ![Screenshot (309)](https://github.com/user-attachments/assets/2b0c8af4-4ed4-4f7e-a83a-fab27911f6a7)
 ![Screenshot (310)](https://github.com/user-attachments/assets/998bdedb-3db8-43a7-b7b0-868d991a32f1)
 ![Screenshot (311)](https://github.com/user-attachments/assets/9257d081-d24b-49f9-b5bd-e01f0c4780c9)
@@ -92,22 +92,22 @@ I integrated an Instant Astrology Match System that analyzes key astrological pa
 ![Screenshot (313)](https://github.com/user-attachments/assets/d3203c7d-8f91-49b6-8f55-03c5396b8edf)
 ![Screenshot (314)](https://github.com/user-attachments/assets/35aaec21-debf-413a-ae10-bf0923a582cb)
 
-# No of people's uploading Their Profiles
+# 🎀No of people's uploading Their Profiles
 ![Screenshot (315)](https://github.com/user-attachments/assets/2863e73f-34c2-481a-a90a-4b6200c21ad0)
 
 # If u want to Upload Details
 ![Screenshot (317)](https://github.com/user-attachments/assets/422d5bcd-20a6-48d3-971c-e1f5e786f177)
 
-# Events display uploaded from Admin
+# 📈Events display uploaded from Admin
 ![Screenshot (316)](https://github.com/user-attachments/assets/cd73ffc1-2d1e-4ffa-ba57-8b4ec316e4d9)
 
-# Saved the persons u like as their respective login's
+# 🛒Saved the persons u like as their respective login's
 ![Screenshot (318)](https://github.com/user-attachments/assets/5e973299-ecf9-48ab-b180-7cb1378d32fb)
 
-# If u want to check the Your Astrology between ur's and ur's Dream girl
+# ✡️♋If u want to check the Your Astrology between ur's and ur's Dream girl
 ![Screenshot (319)](https://github.com/user-attachments/assets/a3579061-1bfe-43a9-8dc4-95b6d7354d51)
 
-                                                                        THANK YOU
+# THANK YOU
 
 
 
