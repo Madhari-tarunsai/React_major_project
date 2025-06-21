@@ -36,3 +36,10 @@ Admin Dashboard Logic – To track number of users logged in
 Custom Compatibility Feature – Astrology-based match calculation between users
 
 State Management (useState/useEffect) – To handle UI updates and dynamic data
+
+
+🌟 Unique Feature: Instant Astrology Match System
+
+
+I integrated an Instant Astrology Match System that analyzes key astrological parameters (like name, birth month, or zodiac sign) of both users and provides a real-time compatibility score. This personalized matchmaking experience goes beyond basic profile matching, adding a traditional touch that aligns with cultural expectations while using modern tech.
+
