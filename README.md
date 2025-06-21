@@ -45,12 +45,33 @@ I integrated an Instant Astrology Match System that analyzes key astrological pa
 
 🚀Websit Output:
 
-#FireBase for Data Store
+# FireBase for Data Store
 ![Screenshot (321)](https://github.com/user-attachments/assets/4bf3c9d7-ed0f-466d-ae6b-602d3d5cb7ba)
 
-#Admin And User Dashboard Data Store in FireStroe
+# Admin And User Dashboard Data Store in FireStroe
 ![Screenshot (322)](https://github.com/user-attachments/assets/6ce3b9fc-d431-4111-b147-5ff15811bcd6)
 ![Screenshot (323)](https://github.com/user-attachments/assets/1d9dd8f8-0665-49a9-a042-bf4a1e6d7b5e)
+
+# LoginPage
+![Screenshot (294)](https://github.com/user-attachments/assets/292c5c6c-8c19-446e-bc7e-32c0232d4858)
+
+# Registerpage
+![Screenshot (295)](https://github.com/user-attachments/assets/5dae25c2-8af5-4379-a424-cf91477151b8)
+
+# Admin LoginPage
+![Screenshot (296)](https://github.com/user-attachments/assets/3dae30bb-1d9f-4d90-a58f-183ab37ecff2)
+
+# Admin Post The Event That visual to Users
+![Screenshot (297)](https://github.com/user-attachments/assets/ab912fb4-4187-4c3f-8bf7-a9fa91a9ff6d)
+
+# How many user are login that details will visible to Admin DashBoard
+![Screenshot (298)](https://github.com/user-attachments/assets/d69cc2c1-95c8-41f0-b742-e683bd13ca93)
+
+
+
+
+
+
 
 
 
